@@ -6,7 +6,7 @@ Voici l'arborescence de ce programme:
 
 
 POUR LANCER LE PROGRAMME:
-PS: Le gossip.csv n'est pas vide volontairement afin d'afficher quelques potins lorsque tu lanceras le programme.
+
 
 1- Je n'ai pas push le Gemfile.lock VOLONTAIREMENT.
     La première chose à faire, se mettre dans le dossier avec le terminal et taper bundle.install
@@ -20,3 +20,7 @@ PS: Le gossip.csv n'est pas vide volontairement afin d'afficher quelques potins 
 4- N'oublie pas que t'es le meilleur et que rien ne peux t'arrêter! (SelfEsteem Speech!)
 
 5- Bisous
+
+
+
+PS: Le gossip.csv n'est pas vide volontairement afin d'afficher quelques potins lorsque tu lanceras le programme.
