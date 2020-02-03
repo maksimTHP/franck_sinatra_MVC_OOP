@@ -23,10 +23,11 @@ class ApplicationController < Sinatra::Base
     erb :edit_gossip, locals: {gossip_row: Gossip.find(params['id']), gossip_id: params['id']}
   end
 
-  post '/gossip/:id/edit/' do
-    Gossip.edit(params["gossip_author"],params["gossip_content"])
-  redirect '/'
-
+  post '/gossips/:id/edit/' do
+    Gossip.edit(params['id'],Gossip.new(params["gossip_author"],params["gossip_content"]))
+    redirect '/'
   end
+
+
 
 end

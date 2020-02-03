@@ -8,11 +8,12 @@
         <%= gossip_id %>
       </p>
       <p>Son auteur :
-        <%= gossip_row.author %>
+        <%= gossip_row.author %>  <!-- Sert à appeler la valeur de auteur de la ligne de ce gossip dans le csv -->
       </p>
-      <p>Son contenu :
-        <%= gossip_row.content %>
+      <p>Le contenu du potin :
+        <%= gossip_row.content %><!-- Sert à appeler la valeur de content de la ligne de ce gossip dans le csv -->
       </p>
-      <a href="/">Lien pour revenir à la page des potins</a>
+      <a href="./<%= gossip_id %>/edit/">Editer ce potin</a>    <!-- Lien vers l'edit de ce potin, qui renvoie vers le contrôler qui nous enverra sur le gossip.edit -->
+      <a href="/">Revenir à l'accueil</a>
   </body>
 </html>

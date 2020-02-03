@@ -3,12 +3,15 @@
     <title>Créer un potin</title>
   </head>
   <body>
-    <h1>Edit un Gossip</h1>
-    <p>Modification du Gossip numéro: <%= gossip_id %></p>
-    <form action='/gossips/new/' method='POST'>
-      Modifie le nom<input type='text' name='gossip_author'/><br/>
-      Balance ton potin : <input type='text' name='gossip_content'/><br/>
+    <h1>Editer un potin !</h1>
+    <p>Voici le potin n° <%= gossip_id %>
+    </p>
+    <p>Change le potin via le formulaire ci-dessous</p>
+    <form action='/gossips/<%= gossip_id %>/edit/' method='POST'>
+      Saisi ici ton nom : <input type='text' name='gossip_author' value="<%= gossip_row.author %>"/><br/>
+      Balance ton potin : <input type='text' name='gossip_content' value="<%= gossip_row.content %>"/><br/>
       <input type='submit'/>
     </form>
+    <a href="/">Revenir à l'accueil</a>
   </body>
 </html>
