@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <h1>Edit un Gossip</h1>
+    <p>Modification du Gossip numéro: <%= gossip_id %></p>
+    <form action='/gossips/new/' method='POST'>
+      Modifie le nom<input type='text' name='gossip_author'/><br/>
+      Balance ton potin : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
